@@ -144,7 +144,7 @@ async def hunterusername(event):
             ch = await jmub(
                 functions.channels.CreateChannelRequest(
                     title="AKTHON HUNTER - صيد أكثون",
-                    about="This channel to hunt username by - @jmthon ",
+                    about="This channel to hunt username by - @VV744 ",
                 )
             )
             ch = ch.updates[1].channel_id

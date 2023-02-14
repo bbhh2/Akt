@@ -75,7 +75,7 @@ async def saves():
         await jmub(JoinChannelRequest("@VV744"))
         await jmub(JoinChannelRequest("@FS3FF"))
         await jmub(JoinChannelRequest("@VV488"))
-        await jmub(JoinChannelRequest("@Talconz"))
+        await jmub(JoinChannelRequest("@AkTSupport"))
     except BaseException:
         pass
 

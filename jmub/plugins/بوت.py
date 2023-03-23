@@ -17,7 +17,7 @@ async def dev(zelzal):
 TOSH_PIC = Config.ALIVE_PIC if Config.ALIVE_PIC else "https://telegra.ph/file/4c406eb5e6932d4834947.jpg"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
-    @tgbot.on(events.InlineQuery)
+    @jmub.ar(events.InlineQuery)
     async def inline_handler(event):
         builder = event.builder
         result = None

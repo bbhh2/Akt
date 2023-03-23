@@ -4,8 +4,8 @@ from ..utils import errors_handler
 from . import BOTLOG, BOTLOG_CHATID, M
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="تنظيف$"))
-@bot.on(sudo_cmd(allow_sudo=True, pattern="تنظيف$"))
+@jmub.ar(admin_cmd(outgoing=True, pattern="تنظيف$"))
+@jmub.ar(sudo_cmd(allow_sudo=True, pattern="تنظيف$"))
 @errors_handler
 async def fastpurger(purg):
     # For .purge command, purge all messages starting from the reply.
@@ -44,7 +44,7 @@ async def fastpurger(purg):
     await sleep(2)
     await done.delete()
 
-@bot.on(admin_cmd(pattern="حذف رسائلي"))
+@jmub.ar(admin_cmd(pattern="حذف رسائلي"))
 async def purgeme(event):
     "To purge your latest messages."
     message = event.text

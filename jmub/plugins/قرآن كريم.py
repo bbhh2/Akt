@@ -13,8 +13,8 @@ from userbot.utils import sudo_cmd
 from . import reply_id
 
 
-@bot.on(admin_cmd(pattern="قرآن ?(.*)"))
-@bot.on(sudo_cmd(pattern="قرآن ?(.*)", allow_sudo=True))
+@jmub.ar(admin_cmd(pattern="قرآن ?(.*)"))
+@jmub.ar(sudo_cmd(pattern="قرآن ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return

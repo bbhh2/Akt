@@ -6,7 +6,7 @@ from ..Config import Config
 from . import TOSH, K, mention
 
 
-@asst_cmd("/repo|#repo")
+@jmub.ar_cmd("/repo|#repo")
 async def dev(zelzal):
     await zelzal.reply(
         "⌔∮ 𝖲𝗈𝗎𝗋𝖼𝖾 𝖠𝗄𝗍𝗁𝗈𝗇 - 𝙍𝙀𝙋𝙊 𓆪",
